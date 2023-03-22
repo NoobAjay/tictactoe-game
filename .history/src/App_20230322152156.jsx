@@ -75,13 +75,7 @@ function App() {
       >
         Start New Game
       </button>
-      <h2
-        style={{
-          fontWeight: 'normal',
-        }}
-      >
-        Current Game History
-      </h2>
+      <h2>Current Game History</h2>
       <History history={history} moveTo={moveTo} currentMove={currentMove} />
     </div>
   );
