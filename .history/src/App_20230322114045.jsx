@@ -9,12 +9,11 @@ function App() {
 
   const winner = calculateWinner(squares);
   const nextPlayer = isXNext ? 'X' : 'O';
-  const statusMessage = winner
-    ? `Winner is ${winner}`
-    : `Next player is ${nextPlayer}`;
+
+  console.log(winner);
 
   const handleSquareClick = clickedPosition => {
-    if (squares[clickedPosition] || winner) {
+    if (squares[clickedPosition]) {
       return;
     }
     setSquares(currentSquares => {
@@ -31,7 +30,7 @@ function App() {
 
   return (
     <div className="app">
-      <h2>{statusMessage}</h2>
+      <h2>Next Player is {nextPlayer}</h2>
       <Board squares={squares} handleSquareClick={handleSquareClick} />
     </div>
   );

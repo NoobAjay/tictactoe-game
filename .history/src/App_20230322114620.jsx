@@ -11,10 +11,12 @@ function App() {
   const nextPlayer = isXNext ? 'X' : 'O';
   const statusMessage = winner
     ? `Winner is ${winner}`
-    : `Next player is ${nextPlayer}`;
+    : `next player is ${nextPlayer}`;
+
+  console.log(winner);
 
   const handleSquareClick = clickedPosition => {
-    if (squares[clickedPosition] || winner) {
+    if (squares[clickedPosition]) {
       return;
     }
     setSquares(currentSquares => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Square from './Square';
 
-const Board = ({ squares, handleSquareClick }) => {
+const Board = () => {
   const renderSquare = position => {
     return (
       <Square
