@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "disploy": "npm run build && surge dist TicTacToeGame1.surge.sh/"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
