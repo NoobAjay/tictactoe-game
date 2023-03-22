@@ -14,12 +14,12 @@ export function calculateWinner(squares) {
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return {
         winner: squares[a],
-        winningSquares: lines[i],
+        winningSqaure: lines[i],
       };
     }
   }
   return {
     winner: null,
-    winningSquares: [],
+    winningSqaure: [],
   };
 }
