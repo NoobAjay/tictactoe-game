@@ -8,19 +8,14 @@ const Board = () => {
   const [isXNext, setIsXNext] = useState(false);
 
   const handleSquareClick = clickedPosition => {
-    if (squares[clickedPosition]) {
-      return;
-    }
     setSquares(currentSquares => {
       return currentSquares.map((squareValue, position) => {
         if (clickedPosition === position) {
-          return isXNext ? 'X' : '0';
+          return 'X';
         }
         return squareValue;
       });
     });
-
-    setIsXNext(currentIsXNext => !currentIsXNext);
   };
 
   const renderSquare = position => {

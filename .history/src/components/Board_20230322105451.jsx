@@ -8,9 +8,6 @@ const Board = () => {
   const [isXNext, setIsXNext] = useState(false);
 
   const handleSquareClick = clickedPosition => {
-    if (squares[clickedPosition]) {
-      return;
-    }
     setSquares(currentSquares => {
       return currentSquares.map((squareValue, position) => {
         if (clickedPosition === position) {
