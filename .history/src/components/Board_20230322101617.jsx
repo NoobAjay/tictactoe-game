@@ -6,15 +6,8 @@ import { useState } from 'react';
 const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
 
-  const handleSquareClick = clickedPosition => {
-    setSquares(currentSquares => {
-      return currentSquares.map((squareValue, position) => {
-        if (clickedPosition === position) {
-          return 'X';
-        }
-        return squareValue;
-      });
-    });
+  const handleSquareClick = position => {
+    //
   };
 
   const renderSquare = position => {
