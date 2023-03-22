@@ -10,7 +10,7 @@ const StatusMessage = ({ winner, gamingBoard }) => {
       return (
         <React.Fragment>
           {' '}
-          Winner is {''}
+          Next Player is {''}
           <span className={winner === 'X' ? 'text-green' : 'text-orange'}>
             {winner}
           </span>
